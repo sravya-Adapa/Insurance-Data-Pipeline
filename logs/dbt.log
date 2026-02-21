@@ -1,0 +1,50 @@
+[0m14:27:16.179302 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x105d18440>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x106faf750>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x106faf890>]}
+
+
+============================== 14:27:16.181823 | e7ee62c3-1810-4907-bb2c-cd5a73901868 ==============================
+[0m14:27:16.181823 [info ] [MainThread]: Running with dbt=1.11.6
+[0m14:27:16.182074 [debug] [MainThread]: running dbt with arguments {'target_path': 'None', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'indirect_selection': 'eager', 'profiles_dir': '/Users/sravyaadapa/.dbt', 'log_path': 'logs', 'log_cache_events': 'False', 'introspect': 'True', 'use_colors': 'True', 'fail_fast': 'False', 'use_experimental_parser': 'False', 'cache_selected_only': 'False', 'partial_parse': 'True', 'quiet': 'False', 'invocation_command': 'dbt init dbt_ins', 'printer_width': '80', 'debug': 'False', 'send_anonymous_usage_stats': 'True', 'static_parser': 'True', 'empty': 'None', 'warn_error': 'None', 'write_json': 'True', 'no_print': 'None', 'version_check': 'True', 'log_format': 'default'}
+[0m14:27:16.190227 [info ] [MainThread]: Creating dbt configuration folder at /Users/sravyaadapa/.dbt
+[0m14:27:16.191082 [debug] [MainThread]: Starter project path: /Library/Frameworks/Python.framework/Versions/3.13/lib/python3.13/site-packages/dbt/include/starter_project
+[0m14:27:16.194166 [info ] [MainThread]: 
+Your new dbt project "dbt_ins" was created!
+
+For more information on how to configure the profiles.yml file,
+please consult the dbt documentation here:
+
+  https://docs.getdbt.com/docs/configure-your-profile
+
+One more thing:
+
+Need help? Don't hesitate to reach out to us via GitHub issues or on Slack:
+
+  https://community.getdbt.com/
+
+Happy modeling!
+
+[0m14:27:16.194292 [info ] [MainThread]: Setting up your profile.
+[0m14:27:19.903139 [debug] [MainThread]: Snowflake adapter: Setting snowflake.connector to ERROR (file logging only)
+[0m14:27:19.903349 [debug] [MainThread]: Snowflake adapter: Setting botocore to ERROR (file logging only)
+[0m14:27:19.903461 [debug] [MainThread]: Snowflake adapter: Setting boto3 to ERROR (file logging only)
+[0m14:30:18.775283 [info ] [MainThread]: Profile dbt_ins written to /Users/sravyaadapa/.dbt/profiles.yml using target's profile_template.yml and your supplied values. Run 'dbt debug' to validate the connection.
+[0m14:30:18.846262 [debug] [MainThread]: Resource report: {"command_name": "init", "command_success": true, "command_wall_clock_time": 182.70096, "process_in_blocks": "0", "process_kernel_time": 0.231087, "process_mem_max_rss": "215973888", "process_out_blocks": "0", "process_user_time": 1.185866}
+[0m14:30:18.849202 [debug] [MainThread]: Command `dbt init` succeeded at 14:30:18.849069 after 182.70 seconds
+[0m14:30:18.850630 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1191c0640>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x106e3b890>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1190f7240>]}
+[0m14:30:18.853172 [debug] [MainThread]: Flushing usage events
+[0m14:30:19.057459 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m15:29:21.654781 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x107068440>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x107f07750>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x107f07890>]}
+
+
+============================== 15:29:21.657526 | ac30ce3f-047c-43f2-ab2a-8e8758123175 ==============================
+[0m15:29:21.657526 [info ] [MainThread]: Running with dbt=1.11.6
+[0m15:29:21.657854 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'profiles_dir': '/Users/sravyaadapa/.dbt', 'introspect': 'True', 'invocation_command': 'dbt run', 'debug': 'False', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'log_format': 'default', 'fail_fast': 'False', 'log_path': 'logs', 'quiet': 'False', 'empty': 'False', 'use_experimental_parser': 'False', 'log_cache_events': 'False', 'write_json': 'True', 'version_check': 'True', 'use_colors': 'True', 'static_parser': 'True', 'partial_parse': 'True', 'indirect_selection': 'eager', 'target_path': 'None', 'cache_selected_only': 'False', 'no_print': 'None', 'send_anonymous_usage_stats': 'True', 'warn_error': 'None'}
+[0m15:29:21.658175 [error] [MainThread]: Encountered an error:
+Runtime Error
+  No dbt_project.yml found at expected path /Users/sravyaadapa/Insurance-Data-Pipeline/dbt_project.yml
+  Verify that each entry within packages.yml (and their transitive dependencies) contains a file named dbt_project.yml
+  
+[0m15:29:21.660096 [debug] [MainThread]: Resource report: {"command_name": "run", "command_success": false, "command_wall_clock_time": 0.03871379, "process_in_blocks": "0", "process_kernel_time": 0.089797, "process_mem_max_rss": "125370368", "process_out_blocks": "0", "process_user_time": 0.898257}
+[0m15:29:21.660399 [debug] [MainThread]: Command `dbt run` failed at 15:29:21.660350 after 0.04 seconds
+[0m15:29:21.660555 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x107deb950>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x107f39c70>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x107d4f9b0>]}
+[0m15:29:21.660704 [debug] [MainThread]: Flushing usage events
+[0m15:29:21.824606 [debug] [MainThread]: An error was encountered while trying to flush usage events
